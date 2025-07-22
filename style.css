@@ -5,10 +5,10 @@
 }
 
 body{ 
-     Background-color: rgb(168, 194, 168);
-     color:#333; 
+     Background-color: rgb(217, 21, 99);
+     color:rgb(43, 10, 85); 
      text-align:center;
-    line-height: 3;
+    line-height: 4;
 }
 
 .section{
@@ -17,6 +17,7 @@ body{
 
 .hero h2 {
     font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .grid{
@@ -25,7 +26,22 @@ body{
 }
 
 .grid div {
-    background:rgb(87, 90, 87); 
+    background:lab(27.69% 61.28 -78.06); 
     padding: 20px;
     border-radius: 100px;
+}
+
+@media (max-width: 768px){
+    .heroh1{font: size 40px;}
+    body{background-color: lightgreen;}
+}
+
+.hero-text{
+display:flex;
+flex-direction:column-reverse;
+align-items:column-reverse;
+
+}
+.hero img {
+    border: radius 50%;
 }
